@@ -1,0 +1,18 @@
+
+C:\Windows\system32>C:\Users\Administrator\Desktop\garis\FSE_IIHT_SBA_Project\server\ProjectManager\packages\NBench.Runner.1.2.2\tools\net452\NBench.Runner C:\Users\Administrator\Desktop\garis\FSE_IIHT_SBA_Project\server\ProjectManager\PerformanceTests\bin\Debug\PerformanceTests.dll
+Executing Benchmarks in C:\Users\Administrator\Desktop\garis\FSE_IIHT_SBA_Project\server\ProjectManager\PerformanceTests\bin\Debug\PerformanceTests.dll
+------------ STARTING PerformanceTests.TaskPerfTests+PerformanceTests ----------
+--------------- BEGIN RUN ---------------
+Elapsed: 00:00:01.4273404
+Elapsed Time - ms: 1,427.00 ,ms: /s 999.76 , ns / ms: 1,000,238.54
+--------------- END RUN ---------------
+
+--------------- RESULTS: PerformanceTests.TaskPerfTests+PerformanceTests ---------------
+--------------- DATA ---------------
+Elapsed Time: Max: 1,427.00 ms, Average: 1,427.00 ms, Min: 1,427.00 ms, StdDev: 0.00 ms
+Elapsed Time: Max / s: 999.76 ms, Average / s: 999.76 ms, Min / s: 999.76 ms, StdDev / s: 0.00 ms
+
+--------------- ASSERTIONS ---------------
+[PASS] Expected Elapsed Time to must be less than or equal to 5,000.00 ms; actual value was 1,427.00 ms.
+
+------------ FINISHED PerformanceTests.TaskPerfTests+PerformanceTests ----------
