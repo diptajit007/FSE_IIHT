@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using MODEL = FSE_SBA_PM.Models;
+using MODEL = FSE_SBA.Models;
 using DAC = FSE_IIHT_SBA.DAC;
-using FSE_SBA_PM.Models;
+
 
 namespace FSE_SBA.BC
 {
@@ -20,11 +18,11 @@ namespace FSE_SBA.BC
         {
             dbContext = context;
         }
-        public List<Task> RetrieveTaskByProjectId(int projectId)
+        public List<MODEL.Task> RetrieveTaskByProjectId(int projectId)
         {
             using (dbContext)
             {
-                return dbContext.Tasks.Where(z => z.Project_ID == projectId).Select(x => new Task()
+                return dbContext.Tasks.Where(z => z.Project_ID == projectId).Select(x => new MODEL.Task()
                 {
                     TaskId = x.Task_ID,
                     Task_Name = x.Task_Name,
@@ -33,7 +31,7 @@ namespace FSE_SBA.BC
                     End_Date = x.End_Date,
                     Priority = x.Priority,
                     Status = x.Status,
-                    User = dbContext.Users.Where(y => y.Task_ID == x.Task_ID).Select(z => new User()
+                    User = dbContext.Users.Where(y => y.Task_ID == x.Task_ID).Select(z => new MODEL.User()
                     {
                         UserId = z.User_ID,
                         FirstName = z.First_Name
@@ -43,11 +41,11 @@ namespace FSE_SBA.BC
 
         }
 
-        public List<ParentTask> RetrieveParentTasks()
+        public List<MODEL.ParentTask> RetrieveParentTasks()
         {
             using (dbContext)
             {
-                return dbContext.ParentTasks.Select(x => new ParentTask()
+                return dbContext.ParentTasks.Select(x => new MODEL.ParentTask()
                 {
                     ParentTaskId = x.Parent_ID,
                     ParentTaskName = x.Parent_Task_Name
@@ -56,7 +54,7 @@ namespace FSE_SBA.BC
         }
 
 
-        public int InsertTaskDetails(Task task)
+        public int InsertTaskDetails(MODEL.Task task)
         {
             using (dbContext)
             {
@@ -97,7 +95,7 @@ namespace FSE_SBA.BC
             }
         }
 
-        public int UpdateTaskDetails(Task task)
+        public int UpdateTaskDetails(MODEL.Task task)
         {
             using (dbContext)
             {
@@ -127,7 +125,7 @@ namespace FSE_SBA.BC
 
         }
 
-        public int DeleteTaskDetails(Task task)
+        public int DeleteTaskDetails(MODEL.Task task)
         {
             using (dbContext)
             {

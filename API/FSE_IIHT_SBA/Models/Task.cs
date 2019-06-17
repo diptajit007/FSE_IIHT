@@ -1,7 +1,7 @@
 ﻿using System;
  
 
-namespace FSE_SBA_PM.Models
+namespace FSE_SBA.Models
 {
     public class Task
     {
