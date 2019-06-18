@@ -79,7 +79,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Mime\FSE_IIHT_SBA\API\FSE_IIHT_SBA\FSE_IIHT_SBA.csproj">
+    <ProjectReference Include="..\FSE_IIHT_SBA\FSE_IIHT_SBA.csproj">
       <Project>{e1094610-f51e-4dad-88ee-02c044ab9bd1}</Project>
       <Name>FSE_IIHT_SBA</Name>
     </ProjectReference>

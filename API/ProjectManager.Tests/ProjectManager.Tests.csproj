@@ -48,8 +48,8 @@
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions">
       <HintPath>..\packages\MSTest.TestFramework.1.2.0\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
-      <HintPath>..\packages\NLog.4.5.11\lib\net45\NLog.dll</HintPath>
+    <Reference Include="NLog">
+      <HintPath>..\packages\NLog.4.6.5\lib\net45\NLog.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -83,7 +83,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Mime\FSE_IIHT_SBA\API\FSE_IIHT_SBA\FSE_IIHT_SBA.csproj">
+    <ProjectReference Include="..\FSE_IIHT_SBA\FSE_IIHT_SBA.csproj">
       <Project>{e1094610-f51e-4dad-88ee-02c044ab9bd1}</Project>
       <Name>FSE_IIHT_SBA</Name>
     </ProjectReference>
